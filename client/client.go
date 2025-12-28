@@ -11,6 +11,7 @@ import (
 	"github.com/google/uuid"
 )
 
+const serverAddr = "18.212.213.203:5000"
 type Request struct {
 	RequestID string                 `json:"request_id"`
 	Method    string                 `json:"method"`
@@ -23,7 +24,6 @@ type Response struct {
 	Error     string      `json:"error,omitempty"`
 }
 
-/* ---------- helpers ---------- */
 
 func prettyPrintJSON(v interface{}) {
 	data, err := json.MarshalIndent(v, "", "  ")
@@ -34,16 +34,15 @@ func prettyPrintJSON(v interface{}) {
 	fmt.Println(string(data))
 }
 
-/* ---------- RPC ---------- */
 
 func callRPC(serverAddr string, req Request) (*Response, error) {
-	conn, err := net.DialTimeout("tcp", serverAddr, 2*time.Second)
+	conn, err := net.DialTimeout("tcp", serverAddr, 3*time.Second)
 	if err != nil {
 		return nil, err
 	}
 	defer conn.Close()
 
-	conn.SetDeadline(time.Now().Add(2 * time.Second))
+	conn.SetDeadline(time.Now().Add(5 * time.Second))
 
 	encoder := json.NewEncoder(conn)
 	decoder := json.NewDecoder(conn)
@@ -61,7 +60,6 @@ func callRPC(serverAddr string, req Request) (*Response, error) {
 }
 
 func main() {
-	serverAddr := "18.212.213.203:5000"
 
 	if len(os.Args) < 2 {
 		fmt.Println("Usage:")
@@ -111,12 +109,14 @@ func main() {
 	}
 
 	maxRetries := 3
+
 	for i := 1; i <= maxRetries; i++ {
 		fmt.Println("Attempt", i)
 
 		resp, err := callRPC(serverAddr, req)
 		if err != nil {
 			fmt.Println("Error:", err)
+			time.Sleep(2 * time.Second)
 			continue
 		}
 
