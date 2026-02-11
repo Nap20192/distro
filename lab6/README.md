@@ -39,53 +39,36 @@ The screenshots together document a complete distributed ML workflow on EMR: the
 - Accuracy was computed successfully for the full feature set.
 - Feature ablation run completed, enabling comparison of accuracy/runtime.
 
-## Screenshots (Evidence)
-### Screenshot 1 — EMR cluster created and running
-Cluster state in AWS EMR console.
-
-![EMR cluster](image.png)
-
-### Screenshot 2 — Dataset staged in HDFS
-`hdfs dfs -ls /user/hadoop/churn_input` showing the CSV.
-
-![HDFS dataset](image%20copy.png)
-
-### Screenshot 3 — Spark job submission
-`spark-submit` command executed on the EMR master.
-
-![Spark submit](image%20copy%202.png)
-
-### Screenshot 4 — Pipeline execution logs
-Spark pipeline stages initializing and running.
-
-![Pipeline output](image%20copy%203.png)
-
-### Screenshot 5 — Model predictions sample
-`Exited`, `prediction`, `probability` output preview.
+## Creating cluster
 
 ![Predictions](image%20copy%204.png)
 
-### Screenshot 6 — Evaluation metric
-Accuracy printed by the evaluator.
+
 
 ![Accuracy](image%20copy%205.png)
 
-### Screenshot 7 — YARN monitoring
-Application and executor status in YARN UI.
 
 ![YARN UI](image%20copy%206.png)
 
-### Screenshot 8 — Experiment run (feature ablation)
-Script run without categorical features.
+
 
 ![Experiment run](image%20copy%207.png)
 
-### Screenshot 9 — Experiment result
-Accuracy/runtime reported for the ablated model.
 
 ![Experiment result](image%20copy%208.png)
 
-### Screenshot 10 — Summary evidence
-Consolidated view of key outputs/results.
 
 ![Summary](image%20copy%209.png)
+
+
+
+![HDFS dataset](image%20copy.png)
+
+## Results
+![Spark submit](image%20copy%202.png)
+
+
+![Pipeline output](image%20copy%203.png)
+
+
+

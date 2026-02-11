@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "8afbd9822b0d8ff6",
+    "id": "5e84c2a590be7c55",
     "type": "split",
     "children": [
       {
-        "id": "03151ef55811c6a0",
+        "id": "3539a0cd7a70de2c",
         "type": "tabs",
         "children": [
           {
-            "id": "77c54bc8d58f95ed",
+            "id": "1c3174ab2481a199",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,35 +20,22 @@
               "icon": "lucide-file",
               "title": "README"
             }
-          },
-          {
-            "id": "2f482f3927cff3b2",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d65df5116d10cc08",
+    "id": "a8eca01af7bc014c",
     "type": "split",
     "children": [
       {
-        "id": "1bea6be4297295e2",
+        "id": "47666e07ec678927",
         "type": "tabs",
         "children": [
           {
-            "id": "f021b6b08d1eb134",
+            "id": "406132fc8bbb739a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -61,7 +48,7 @@
             }
           },
           {
-            "id": "aa30a03792643783",
+            "id": "11a926f66cb8b09f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -78,7 +65,7 @@
             }
           },
           {
-            "id": "ab5ad4f179c604d6",
+            "id": "4f478e5940ca9f9f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -94,15 +81,15 @@
     "width": 300
   },
   "right": {
-    "id": "1d7f94aab3411f6b",
+    "id": "fae4086dec09d805",
     "type": "split",
     "children": [
       {
-        "id": "1ed71db34a0633cb",
+        "id": "5f0152878a5afba8",
         "type": "tabs",
         "children": [
           {
-            "id": "32c61bd13da26329",
+            "id": "fec1eae3acc5e64c",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -121,7 +108,7 @@
             }
           },
           {
-            "id": "c97364eb1005fea4",
+            "id": "0c13b4f47545cb39",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -135,7 +122,7 @@
             }
           },
           {
-            "id": "047cfd74a455b114",
+            "id": "9f3eb8b309f34379",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -150,7 +137,7 @@
             }
           },
           {
-            "id": "7b9fb34c84a84bde",
+            "id": "e9f84a15fbb94013",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -164,7 +151,7 @@
             }
           },
           {
-            "id": "1036a5b3056a66bd",
+            "id": "4a79b6e5d99a355f",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -196,6 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "2f482f3927cff3b2",
-  "lastOpenFiles": []
+  "active": "1c3174ab2481a199",
+  "lastOpenFiles": [
+    "image copy 9.png",
+    "README.md",
+    "image.png"
+  ]
 }
