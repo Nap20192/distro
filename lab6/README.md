@@ -31,6 +31,14 @@ spark-submit \
 ## Experiment (Option B — Feature Ablation)
 Removed categorical features and compared accuracy/runtime. See screenshots for evidence and results.
 
+## Summary and Analysis
+The screenshots together document a complete distributed ML workflow on EMR: the cluster is created and running, the churn dataset is placed in HDFS, and the Spark job is submitted from the master node. The pipeline logs confirm the ML stages (indexing, encoding, assembling, scaling, and training) execute on YARN, and sample predictions plus the printed accuracy validate the end-to-end flow. The YARN UI screenshot verifies distributed execution with active executors and stages. The experiment sequence shows a second run with categorical features removed; the reported accuracy/runtime demonstrates the impact of feature ablation and provides the required comparison. Overall, the evidence supports correct pipeline design, successful distributed execution, and a clear experimental observation.
+
+## Result Summary
+- Spark ML pipeline completed on EMR and produced predictions.
+- Accuracy was computed successfully for the full feature set.
+- Feature ablation run completed, enabling comparison of accuracy/runtime.
+
 ## Screenshots (Evidence)
 1. **EMR cluster created and running** — Cluster state in AWS EMR console.
 	![EMR cluster](image.png)
